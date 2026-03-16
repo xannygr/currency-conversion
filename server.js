@@ -2,10 +2,8 @@ import express from 'express'
 const app = express();
 const PORT = 3000;
 
-// Middleware для обработки JSON
 app.use(express.json());
 
-// Мидлвар для логирования всех запросов
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   console.log('Headers:', req.headers);
@@ -77,8 +75,8 @@ app.post('/api/user', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server has been started on port http://localhost:${PORT}`);
   console.log('Available endpoints:');
-  console.log('  GET  /api/currencies');
-  console.log('  GET  /api/rates?base=USD&targets=EUR,GBP');
-  console.log('  GET  /api/user');
-  console.log('  POST /api/user');
+  console.log('GET/api/currencies');
+  console.log('GET/api/rates?base=USD&targets=EUR,GBP');
+  console.log('GET/api/user');
+  console.log('POST/api/user');
 });
