@@ -1,0 +1,23 @@
+{
+  "name": "currency-conversion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "serve": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Hanna",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.14"
+  }
+}
